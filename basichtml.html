@@ -1,0 +1,19 @@
+<h1> News Link </h1>
+
+<table>
+    <thead>
+        <th>Title</th>
+        <th>Link</th>
+    </thead>
+    <tbody>
+        {{ range $element := .Location }}
+            <tr>
+                <td>
+                    <ul> 
+                        <li> {{ $element }} </li>
+                    </ul>
+                </td>
+            </tr>
+        {{ end }}
+    </tbody>
+</table>
